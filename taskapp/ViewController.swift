@@ -22,7 +22,6 @@ class ViewController: UIViewController, UISearchBarDelegate {
     // 以降内容をアップデートするとリスト内は自動的に更新される
     var taskArray = try! Realm().objects(Task).sorted("date", ascending: false)
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
